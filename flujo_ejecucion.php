@@ -6,17 +6,30 @@
 </head>
 <body>
 
+<?php
+
+echo "Primer mensaje <br>";
+echo "Segundo mensaje <br>";
+
+?>
 
 <?php
-    echo "Primer mensaje <br>";
 
 function dameDatos(){
 
-    
+    echo "<br>Este es un mensaje dentro de una funcion<br>";
 
 }
 
-    echo "Segundo mensaje <br>";
+    dameDatos();
+    dameDatos();
+    dameDatos();
+    dameDatos();
+
+    include("flujo_dos.php");
+    segundaFuncion();
+
+    echo "<br>Mensaje de prueba<br>"
 
 ?>
 
