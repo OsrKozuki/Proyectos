@@ -11,8 +11,12 @@
 
     function dameNombre(){
 
-        $nombre="Mari";
+        global $nombre;
+
+        $nombre="El nombre es " . $nombre;
     }
+
+    dameNombre();
 
     echo $nombre;
 
