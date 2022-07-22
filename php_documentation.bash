@@ -38,3 +38,9 @@ Ejecucion del lado del servidor
 
     Super Global: Declarada como array. Visible y accesible
     fuera del script PHP. 
+
+
+
+
+
+    
