@@ -40,6 +40,11 @@ Ejecucion del lado del servidor
     fuera del script PHP. 
 
 
+    OPERADORES DE COMPARACION
+
+    
+
+
 
 
 

@@ -27,8 +27,23 @@
     $variable1="Casa";
     $variable2="CASA";
 
-    $resultado=strcmp($variable1,$variable2); // Devuelve uno si no son iguales y 0 si son iguales.
+    $resultado=strcmp($variable1,$variable2); 
     echo "El resultado es " . $resultado;
+
+    $resultado2=strcasecmp($variable1, $variable2);
+    echo "<br>El segundo resultado es " . $resultado2 . "<br>";
+
+    if ($resultado){
+        echo "No coincide <br>";
+    }else{
+        echo "Coinciden <br>";
+    }
+
+    if ($resultado2){
+        echo "No coincide <br>";
+    }else{
+        echo "Coinciden <br>";
+    }
 
 ?>
 
