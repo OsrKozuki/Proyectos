@@ -1,5 +1,8 @@
 #include <stdio.h>
-
+//Funciones secundarias
+void curricular();
+void Introduccion();
+// Fin de funciones secundarias
 
   /* ========================================== Inicio de funciones ========================================== */
 
@@ -16,9 +19,8 @@ int imprimir ()
     printf("6.- Saber mas... \n");
     printf("7.- Salir \n");
     scanf("%d" , &seleccion);
+    fflush(stdin);
     printf("\n");
-    printf("Seleccion es %d \n", seleccion);
-
 
     return seleccion;
 }
@@ -42,7 +44,7 @@ void floatF()
 
 void longF()
 {
-    printf("Bienvenido a lla funcion de long \n");
+    printf("Bienvenido a la funcion de long \n");
 }
 
 void shortF()
@@ -52,7 +54,39 @@ void shortF()
 
 void saberF()
 {
-    printf("Saber mas... \n");
+    int Saberes;
+    printf("En este apartado vas a ver datos generales del curso \n");
+    printf("Como puedes ver no tengo interfaz, pero la info te puede servir \n");
+    printf("Quizas luego agregue alguna interfaz... \n");
+    printf("ESCOGE una opcion que quieras ver, todo es pura informacion \n");
+
+    do 
+    {
+        Saberes;
+        printf(" \n 1.- Introduccion \n");
+        printf("2.- Elementos de lenguaje \n");
+        printf("3.- Modificador y tamanio de datos \n");
+        printf("4.- Bits y bytes \n");
+        printf("5.- Standard Input \n");
+        printf("6.- Operadores \n");
+        printf("7.- Operadores de bits \n");
+        printf("8.- Control de flujo IF \n");
+        fflush(stdout);
+        scanf("%d", &Saberes);
+        fflush(stdin);
+
+        switch (Saberes)
+        {
+        case 1:
+            Introduccion();
+            break;
+        }
+
+    }
+    while (Saberes != 10);
+    
+
+
 }
 
 
@@ -103,3 +137,36 @@ int main ()
 
     return 0;
 }
+
+
+/* ======================== Variables secundarias ======================== */
+
+// FUNCIONES PARA SABER MAS ... Introduccion
+
+void Introduccion()
+{
+    int MenIntr;
+
+    do{
+    MenIntr;
+    printf("\n Escoge una Opcion \n");
+    printf(" 1.- Contexto Curricular \n ");
+    printf(" 2.- Programacion Estructurada \n");
+    printf(" 3.- Lenguaje C \n");
+    printf(" 4.- Etapas de la programacion \n");
+    printf(" 5.- Salir \n");
+    fflush(stdout);
+    scanf("%d", &MenIntr);
+    fflush(stdin);
+    }
+    while (MenIntr != 5);
+    
+}
+
+
+void curricular()
+{
+    printf("Esta es una wea curricular");
+}
+
+// FIN DE FUNCIONES SABER MAS ... Introduccion
