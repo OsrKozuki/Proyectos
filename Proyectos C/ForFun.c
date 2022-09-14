@@ -68,7 +68,7 @@ int main ()
 
     do 
     {
-    int numero = imprimir();
+    numero = imprimir();
 
     switch (numero)
     {
@@ -96,15 +96,10 @@ int main ()
         saberF();
         break;
 
-        default:
-        printf("Hola %d", numero);
-         printf("Hasta la proxima \n");
-        exit(0);
-        break;
     }
 
     }
-    while(1);
+    while(numero != 7);
 
     return 0;
 }
