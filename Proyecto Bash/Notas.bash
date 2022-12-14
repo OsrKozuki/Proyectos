@@ -55,6 +55,20 @@ abcdefghijklmnopqrstuvwxyz
 
 tr '[T-ZA-St-za-s]' '[G-ZA-Fg-za-f]'
 
-wbWdlBxEir4CaE8LaPhauuOo6pwRmfrDw #Bandit13
+#Comando para buscar por medio de grupo, usuario y tamaño desde
+#raiz y no mostrar errores
 
- 
+find / -user USUARIO -group GRUPO -size BYTESc 2>/dev/null
+
+#COn strings podemos imprimir solo las lineas legibles de un archivo
+strings data.txt | grep "===" | tail -1| awk 'NF{print $NF}'
+
+# COn base 64 se puede codificar en dicho base64 y con -d se puede decodificar
+cat data.txt | base64 -d
+
+# Si se tiene la llave privada se puede ingresar con
+ssh -i sshkey.private bandit14@localhost -p2220
+
+#Para verificar si un puerto esta abierto se puede usar
+bash -c "echo '' > /dev/tcp/127.0.0.1/3034" 2>/dev/null && echo "[*] Puerto abierto" || echo "[*] Puerto cerrado"
+
